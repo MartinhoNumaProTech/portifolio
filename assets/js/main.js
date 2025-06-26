@@ -5,7 +5,8 @@ const tabContents = document.querySelectorAll('[data-content]');
 
 tabs.forEach(tab => {
     tab.addEventListener('click', () => {
-        const target = document.querySelector(tab.dataset.target);
+        const target = document.querySelector(tab.dataset.target); 
+        
 
         // Remove a classe 'filters__active' de todas as seções e botões
         tabContents.forEach(tc => {
